@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Satisfacción</title>
+    <link rel="icon" type="image/x-icon" href="../../imagenes/favicon.ico">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+<h1 style="font-size: 50px;">Encuesta de Satisfacción</h1>
+
+    <form action="Confirmación.html">
+        <fieldset style="border: 2px solid rgb(0, 0, 0); border-radius: 10px;">
+            <legend>Datos</legend>
+            <label for="nombre">Nombre del cliente:</label><br>
+            <input type="text" id="nombre" name="nombre" value=""><br><br>
+
+            <label for="servicio">Servicio utilizado:</label>
+            <input type="text" id="servicio" name="servicio" required /><br><br>
+
+            <label for="valoracion">Valoración general del 1 al 5:</label>
+            <input type="number" id="valoracion" name="valoracion" min="1" max="5" required /><br><br>
+
+            <p>Aspectos que más le han gustado:</p>
+
+            <input type="checkbox" id="atencion" name="aspectos" value="atencion">
+            <label for="atencion">Atención</label>
+
+            <input type="checkbox" id="rapidez" name="aspectos" value="rapidez">
+            <label for="rapidez">Rapidez</label>
+
+            <input type="checkbox" id="precio" name="aspectos" value="precio">
+            <label for="precio">Precio</label>
+
+            <input type="checkbox" id="calidad" name="aspectos" value="calidad">
+            <label for="calidad">Calidad</label>
+
+            <br><br>
+
+            <p>¿Recomendaría el servicio?</p>
+
+            <input type="radio" id="si" name="recomendar" value="si">
+            <label for="si">Sí</label>
+
+            <input type="radio" id="no" name="recomendar" value="no">
+            <label for="no">No</label>
+
+            <br><br>
+
+            <label for="comentarios">Comentarios:</label><br><br>
+            <textarea id="comentarios" name="comentarios" style="resize: none;"></textarea>
+
+        </fieldset><br><br>
+
+
+
+        <div style="text-align: center;"><input
+                style="background-color: rgba(0, 255, 0, 0.473); border-radius: 10px; border: 2px solid rgb(0, 0, 0);"
+                type="submit" value="Enviar"></div><br><br>
+
+        <div style="text-align: center; "><input style="border-radius: 10px; border: 2px solid rgb(0, 0, 0);"
+                type="reset" value="Limpiar campos"></div>
+
+    </form><br><br><br>
+
+    <h2>Resultados</h2>
+
+    <br>
+
+    <table>
+        <tr>
+            <th>Cliente</th>
+            <th>Servicio</th>
+            <th>Valoración</th>
+            <th>Recomienda</th>
+            <th>Comentarios</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>Reparación</td>
+            <td style="background-color: rgba(5, 173, 5, 0.836);">5</td>
+            <td>Sí</td>
+            <td>Muy buen servicio</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>Instalación</td>
+            <td style="background-color: rgba(0, 155, 0, 0.562);">4</td>
+            <td>Sí</td>
+            <td>Rápido y eficaz</td>
+        </tr>
+        <tr>
+            <td>Lucía</td>
+            <td>Reparación</td>
+            <td style="background-color: rgba(173, 120, 5, 0.685);">3</td>
+            <td>No</td>
+            <td>Tardaron demasiado</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>Mantenimiento</td>
+            <td style="background-color: rgba(5, 173, 5, 0.836);">5</td>
+            <td>Sí</td>
+            <td>Excelente atención</td>
+        </tr>
+        <tr>
+            <td>Elena</td>
+            <td>Instalación</td>
+            <td style="background-color: rgba(173, 5, 5, 0.685);">2</td>
+            <td>No</td>
+            <td>Precio elevado</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h2>Resumen de valoraciones</h2>
+
+    <br>
+
+    <table style="width: 20%;">
+        <tr>
+            <th>Valoración</th>
+            <th>Número de clientes</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>2</td>
+        </tr>
+    </table>
+</body>
+
+</html>

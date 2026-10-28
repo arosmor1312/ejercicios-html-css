@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva para Biblioteca</title>
+    <link rel="icon" type="image/x-icon" href="../../imagenes/favicon.ico">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <h1 style="font-size: 50px;">Reserva para Biblioteca</h1>
+    <br>
+    <form action="Reserva.html">
+        <fieldset style="border: 2px solid rgb(255, 255, 255); border-radius: 10px;">
+            <legend>Datos</legend>
+            <label for="usuario">Introduce tu usuario:</label><br>
+            <input type="text" id="usuario" name="usuario" value="" required /><br><br>
+
+            <label for="socio">Introduce tu número de socio:</label><br>
+            <input type="number" id="socio" name="socio" value="" required /><br><br>
+
+            <label for="correo">Correo Electrónico:</label><br>
+            <input type="email" id="correo" name="correo" value="" required /><br><br>
+
+            <label for="Título del libro">Título del libro:</label><br>
+            <input type="text" id="Título del libro" name="Título del libro" value="" required /><br><br>
+
+            <label for="autor">Autor:</label><br>
+            <input type="text" id="autor" name="autor" value="" required /><br><br>
+
+            <label for="fecha">Fecha de reserva:</label>
+            <input type="date" id="fecha" name="fecha" required /><br><br>
+
+            <label for="recogida">Fecha prevista de recogida:</label>
+            <input type="date" id="recogida" name="recogida" required /><br><br>
+
+
+            <label for="tipo">Tipo de préstamo:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="sala">Sala</option>
+                <option value="domicilio">Domicilio</option>
+            </select>
+            <br><br>
+            <label for="comentarios">Comentarios adicionales:</label>
+            <textarea id="comentarios" name="comentarios" style="resize: none;"></textarea>
+
+        </fieldset><br><br>
+
+
+
+        <div style="text-align: center;"><input
+                style="background-color: rgba(0, 255, 0, 0.473); border-radius: 10px; border: 2px solid rgb(0, 0, 0);"
+                type="submit" value="Reservar"></div><br><br>
+
+        <div style="text-align: center; "><input style="border-radius: 10px; border: 2px solid rgb(0, 0, 0);" type="reset" value="Limpiar campos"></div>
+
+    </form><br><br><br><br>
+
+    <table style="border: 3px solid black;">
+        <thead>
+            <tr>
+                <th>N.º reserva</th>
+                <th>Usuario</th>
+                <th>Libro</th>
+                <th>Fecha de reserva</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ana López</td>
+                <td>El principito</td>
+                <td>14/10/2026</td>
+                <td style="background-color: rgba(255, 0, 0, 0.568);">Pendiente</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Pablo Ruiz</td>
+                <td>La sombra del viento</td>
+                <td>13/10/2026</td>
+                <td style="background-color: rgba(196, 47, 255, 0.623);">Confirmada</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Marta Díaz</td>
+                <td>Don Quijote</td>
+                <td>12/10/2026</td>
+                <td style="background-color: greenyellow;">Entregada</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Luis Martín</td>
+                <td>Cien años de soledad</td>
+                <td>11/10/2026</td>
+                <td style="background-color: rgba(255, 0, 0, 0.568);">Pendiente</td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <label for="busqueda">Buscar por número de socio:</label>
+                    <input type="search" id="busqueda" name="busqueda">
+                    <input type="submit" value="Buscar">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

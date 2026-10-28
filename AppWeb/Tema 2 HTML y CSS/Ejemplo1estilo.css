@@ -1,0 +1,48 @@
+ p {
+     color: aqua;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-size: 150%;
+     border: 2px solid blueviolet;
+     padding: 30px;
+ }
+
+ .paddingGrande {
+     padding: 30px;
+     color: rgb(255, 127, 127);
+ }
+
+ .paddingPequeño {
+
+     color: chartreuse;
+     padding: 3px;
+ }
+
+ .borderGrande {
+
+     color: rgb(76, 0, 255);
+     border: 30px solid;
+ }
+
+ .borderPequeño {
+
+     color: rgb(251, 255, 0);
+     border: 5px solid;
+ }
+
+ .marginGrande {
+
+     color: rgb(255, 0, 212);
+     margin: 30px;
+ }
+
+ .marginPequeño {
+
+     color: rgb(255, 0, 0);
+     margin: 5px;
+ }
+/* Para un título especial */
+ #titulo {
+     color: rgb(153, 0, 255);
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-size: 200%;
+ }
